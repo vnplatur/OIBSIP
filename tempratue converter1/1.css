@@ -1,0 +1,95 @@
+h2{
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgba(255, 0, 128, 0.904);
+
+}
+
+
+body{
+    margin-left: 350px;
+    margin-right: 350px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(176, 197, 135);
+}
+h2{
+   padding: 30px;
+   margin: 35px;
+
+}
+main{
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    padding:1.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px #333;
+    grid-gap:20px;
+    padding: 30px;
+    
+    
+}
+p{
+    color:#888;
+    margin-bottom:5px;
+    font-size:1.1rem
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.input{
+    border:2px solid #888;
+    border-radius: 5px;
+    flex-grow: 1;
+    padding-left:1rem;
+    font-size:1.5rem;
+    transition: all 200ms ease-in-out;
+    
+    
+}
+.input:hover{
+    border-color:#5CF;
+}.input:hover ~i{
+    color:#5CF;
+} */
+.input:active,.input:focus{
+    border-color:#3AF;
+    outline:none;
+}
+
+.input:focus~i{
+    color:#3AF
+}
+.temp{
+    position:relative;
+    flex-grow: 1;
+    
+}
+#temp{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+button{
+    border:none;
+    height: 100%;
+    background-color: #3AF;
+    border-radius: 5px;
+    font-size:1.2rem;
+    color:white;
+    cursor: pointer;
+}
+

@@ -1,0 +1,371 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<style>
+		.row {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-right: -15px;
+			margin-left: -15px;
+			position: relative;
+		}
+		.padd-15 {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.about .about-content {
+			-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		.about .about-content .personal-info {
+			-ms-flex: 0 0 60%;
+			flex: 0 0 60%;
+			max-width: 60%;
+			margin-top: 40px;
+		}
+		.about .about-content .personal-info .info-item {
+			-ms-flex: 0 0 50%;
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		/* top bar*/
+		.nav1{
+			display: flex;
+			width: 84%;
+			margin: 10px;
+			padding: 10px 0;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.nav1 ul li{
+			display: inline-block;
+			list-style: none;
+			margin: 10px 20px;
+		}
+		.nav1 ul li a{
+			text-decoration: none;
+			color: rgb(136, 227, 255);
+			font-weight: bold;
+		}
+		.nav1 ul li a:hover{
+			color: rgba(255, 0, 0, 0.877);
+		}
+		/* skill style*/
+		
+
+
+.container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: rgba(255, 94, 0, 0.774);
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+	background-image: url("images/skillback.jpg");
+} 
+.container *{
+    font-family: "Poppins",sans-serif;
+    color: black;
+    font-weight: 800;
+}
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+   
+ 
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 72%;
+    }
+}
+#jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 58%;
+    }
+} 
+	</style>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/nevigation.css">
+	<title>Author</title>
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		
+		
+		<header>
+			
+		<a href="#" class="logo"><img src="./images/vp-logo.png" width="20%" alt="site logo"></a>
+		  <div class="navigation">
+			<a href="#">Home</a>
+			<a href="#fh5co-about-me">About</a>
+			<a href="#wrapper">skill's</a>
+			<a href="#fh5co-social">social</a>
+			<a href="#site-footer">Contact</a>
+		  </div>
+		</header>
+	</nav>
+	
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="./images/pngvaiju.png" alt="author image" width="170%">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Vaijeenath</h2>
+				</div>
+				<div class="top-banner__text-down">
+					<h2 class="top-banner__h2">Panchakshari</h2>
+					<span class="brand-span">Student, python programmer</span>
+				</div>
+				<p>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you.
+					 Its my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
+				<a href="#" class="brand-button">Read bio > </a>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="./images/vaijeenath2.jpg" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						
+						<h2 class="universal-h2"><span>V</span>aijeenath<br> Panchakshari</h2>
+					</div>
+					
+					<p>I'm Vaijeenath Panchakshari and Web Developer</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
+						<p style="text-align: center;"><span>H</span>i! My name is Vaijeenath Panchakshari. I am a Web Developer as well as Engineering student , and I'm very passionate and dedicated to my work.I Acquired the Knowledge of hardware as well as Software. To secure a challenging position where I can effectively contribute my skills as Team Leader Professional, possessing competent Leadership Skills.</p>						
+					</div>
+				
+
+					<div class="row">
+						<div class="personal-info padd-15">
+						  <div class="row">
+							<div class="info-item padd-15">
+							  <p style="font-size: 35px"><span style="font-weight: bold">Birthday : </span>23 jan 2000</p>
+							</div>
+							<div class="info-item padd-15">
+							  <p style="font-size: 35px" ><span style="font-weight: bold">Age :</span> 21</p>
+							</div>
+							
+							<div class="info-item padd-15">
+							  <p style="font-size: 35px"><span style="font-weight: bold">Phone : </span>8565554515</p>
+							</div>
+							<div class="info-item padd-15">
+							  <p style="font-size: 35px"><span style="font-weight: bold">Email : </span>runtime@gmail.com</p>
+							</div>
+							<div class="info-item padd-15">
+							  <p style="font-size: 35px"><span style="font-weight: bold">Degree : </span>BE(Computer <br><br>Engineering)</p>
+							</div>
+		
+							<div class="info-item padd-15">
+							  <p style="font-size: 35px"><span style="font-weight: bold">City : </span>Pune</p>
+							</div>
+							<div class="info-item padd-15">
+							  <p style="font-size: 35px "><span style="font-weight: bold">Freelance : </span>Avalible</p>
+							</div>
+						  </div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
+
+	<!--skill's start-->
+	<div class="wrapper">
+
+        <div class="container">
+            <h2>programming Skills </h2>
+            <div class="skills">
+                <div class="details">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="bar">
+                    <div id="html-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>CSS</span>
+                    <span>75%</span>
+                </div>
+                <div class="bar">
+                    <div id="css-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Python</span>
+                    <span>72%</span>
+                </div>
+                <div class="bar">
+                    <div id="js-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>MySql</span>
+                    <span>68%</span>
+                </div>
+                <div class="bar">
+                    <div id="jQuery-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	<!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+			<div class="social">
+				<h5>Follow me!!</h5>
+				<div class="social-icons">
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+				</div>
+				<h5>Share it!</h5>
+			</div>
+		</div>
+	</section>
+	<!-- Social -->
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="./images/footer-img.jpg" alt="about me image">
+						<p>Read more about me</p>
+					</div>
+					<div class="footer-info__right">
+						<h5>Get In Touch</h5>
+						<p class="footer-phone">Phone: 5648597532</p>
+						<p>Email : runtime@gmail.com</p>
+						<div class="social-icons">
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-contact-form">
+					<h5>Contact Form</h5>
+					<form class="contact-form">
+						<div class="contact-form__input">
+							<input type="text" name="name" placeholder="Name">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<textarea></textarea>
+						<input type="submit" name="submit" value="Submit" class="submit-button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2019 Author | Design by vaijeenath | All rights Reserved.</p>
+				<div class="footer-bottom__img">
+					<img src="./images/footer-mastercard.png" alt="footer image">
+					<img src="./images/footer-paypal.png" alt="footer image">
+					<img src="./images/footer-visa.png" alt="footer image">
+					<img src="./images/footer-fedex.png" alt="footer image">
+					<img src="./images/footer-dhl.png" alt="footer image">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
